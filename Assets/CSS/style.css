@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.topbar {
+    width: 500px;
+    height: 100000px;
+    background: rgb(21, 128, 0);
+}
+
+/* Side Navigation Stuff */
+.header {
+    width: 100%;
+    height: 100vh;
+    background: orange;
+}
+
+.side-nav {
+    width: 250px;
+    height: 100%;
+    background: rgb(255, 55, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+}
+
+.nav-links {
+    list-style: none;
+    position: relative;
+}
+
+.nav-links a i {
+    position: absolute;
+    margin-left: 8%;
+}
+
+.nav-links a {
+    color: rgb(79, 20, 218);
+    text-decoration: none;
+    padding: 10px 14px;
+}
+
+.nav-links p {
+    text-align: center;
+    margin-right: -20%;
+    margin-top: -5%;
+}
+
+.active {  
+    background: #acb9ff;  
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    left: 0;
+    top: 0%;
+    z-index: -2;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgb(63, 26, 196);
+    display: none;
+    transition: top 0s;
+} 
+/* This begins the extra feature to create a mouse hover bar, for each nav link */
+.nav-links li:hover a {
+    color: #2f8bfc;
+    transition: 0.5s;
+}
+
+.nav-links li:hover ~ .active {display: block;}
+
+.nav-links li:nth-child(1):hover ~ .active{top: .01%}
+.nav-links li:nth-child(2):hover ~ .active{top: 20%}
+.nav-links li:nth-child(3):hover ~ .active{top: 39.5%}
+.nav-links li:nth-child(4):hover ~ .active{top: 59.8%;}
+.nav-links li:nth-child(5):hover ~ .active{top: 81%}
+
+/* This concludes the invisible mouse hovering feature */
+
+
+@media only screen and (max-width: 600px) {
+    .side-nav{width: 110px;}
+    .tree-logo{display: block;}
+    .face {display: none;}
+    .nav-links li p {display: none;}
+    .nav-links li i {margin: 0;}
+    .nav-links li a {justify-content: center;}
+}
+
+
+
+.container {
+    position: fixed;
+    width: 1200px;
+    height: 300px;
+    margin: 240px auto;
+}
+.container .About-Container {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.container .Weather-Container {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
