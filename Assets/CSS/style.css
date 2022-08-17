@@ -34,6 +34,25 @@ header {
     border-bottom: solid black 3px;
     position: sticky;
     top: 0;
+}
+
+/* Strictly For the Weather API */
+
+
+
+#temperature-description {
+    box-sizing: 15px;
+    text-align: right;
+    justify-content: right;
+}
+
+#degree {
+    text-align: justify;
+}
+
+
+
+/* Strictly For the Weather API */
 
 .sidebarMenuInner li{
     list-style: none;
