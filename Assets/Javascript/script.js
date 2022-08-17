@@ -11,10 +11,10 @@ window.addEventListener('load', ()=> {
             const api = `https://home.openweathermap.org/api_keys/5b2e2bc67a6c73ff4f0998fcebd047ad/${lat},${long}`;
             const proxy = "https://cors-anywhere.herokuapp.com/"
         fetch(api)
-            .then(data =>{
+            .then(respons => {
                 return response.json();
             })
-            .then(response => {
+            .then(data => {
                 console.log(data);
                 const {temperature, summary} = data.currently;
                 

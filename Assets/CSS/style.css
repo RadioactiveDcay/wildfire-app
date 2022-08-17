@@ -41,15 +41,22 @@ header {
 
 
 #temperature-description {
+    display: flexbox;
     box-sizing: 15px;
     text-align: right;
     justify-content: right;
+    margin: auto;
+    background-color: justify;
+    flex: 2 30%;
+    background-color: var(--tertiary-color);
+    border: black
 }
 
-#degree {
-    text-align: justify;
+#degrees {
+    flex: 2 30%;
+    background-color: var(--tertiary-color);
+    border: black
 }
-
 
 
 /* Strictly For the Weather API */
