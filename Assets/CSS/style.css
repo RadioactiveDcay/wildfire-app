@@ -127,6 +127,11 @@ main {
 padding: 0px 300px;
 }
 
+#fireMap {
+    height: 400px;
+    width: 100%;
+}
+
 .wrap-sec1,
 .wrap-sec2,
 .wrap-sec3,
