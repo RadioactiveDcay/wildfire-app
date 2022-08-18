@@ -1,3 +1,5 @@
+var city;
+
 window.addEventListener('load', ()=> {
     let long;
     let lat;
@@ -8,10 +10,13 @@ window.addEventListener('load', ()=> {
         navigator.geolocation.getCurrentPosition(position => {
             long = position.coords.longitude;
             lat = position.coords.latitude; 
-            const api = `https://home.openweathermap.org/api_keys/5b2e2bc67a6c73ff4f0998fcebd047ad/${lat},${long}`;
-            const proxy = "https://cors-anywhere.herokuapp.com/"
-        fetch(api)
-            .then(respons => {
+            const proxy = "https://cors-anywhere.herokuapp.com/";
+            const queryURL = "https://api.openweathermap.org/data/2.5/weather?q=Sacramento&appid=5b2e2bc67a6c73ff4f0998fcebd047ad";
+            const APIkey = `5b2e2bc67a6c73ff4f0998fcebd047ad`;
+            
+
+        fetch(queryURL)
+            .then(response => {
                 return response.json();
             })
             .then(data => {
