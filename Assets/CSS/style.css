@@ -316,7 +316,56 @@ footer {
 }
 
 
+/* List Input Modal and Display */
+form {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
 
+form input {
+  outline: none;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-size: 2.2rem;
+  border: 2px solid var(--grey);
+  border-radius: 12px;
+}
+
+form .form-group {
+  margin: 10px 6px 10px 0;
+  flex: 1;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  display: inline-block;
+  padding: 10px 15px;
+  background: var(--primary);
+  font-size: 2.2rem;
+  border-radius: 12px;
+  position: relative;
+  top: -3px;
+  box-shadow: 0 3px var(--grey);
+}
+
+.btn:hover {
+  box-shadow: 0 2px var(--grey);
+  top: -2px;
+}
+.btn:active {
+  box-shadow: 0 0px var(--grey);
+  top: 0;
+}
+
+.list-input {
+    display: flex;
+    background: gray;
+    border: solid black 1px;
+    border-radius: 3px;
+}
 
 /*
 `.menu-link` represents the responsive menu toggle that shows/hides on
