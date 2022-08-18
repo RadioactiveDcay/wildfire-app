@@ -162,7 +162,9 @@ padding: 0px 300px;
 .wrap-sec3,
 .wrap-sec4,
 .wrap-sec5,
-.wrap-sec6 {
+.wrap-sec6,
+.wrap-sec7,
+.wrap-sec8 {
     margin-bottom: 1.2rem 0;
     border-bottom: var(--tertiary-color) solid 6px;
   }
@@ -215,7 +217,9 @@ padding: 0px 300px;
   .sec3-content,
   .sec4-content,
   .sec5-content,
-  .sec6-content {
+  .sec6-content,
+  .sec7-content,
+  .sec8-content {
     max-height: 0px;
     overflow: hidden;
     transition: max-height .25s ease-in-out;
@@ -226,7 +230,9 @@ padding: 0px 300px;
   .toggle:checked + .lbl-toggle + .sec3-content,
   .toggle:checked + .lbl-toggle + .sec4-content,
   .toggle:checked + .lbl-toggle + .sec5-content, 
-  .toggle:checked + .lbl-toggle + .sec6-content {
+  .toggle:checked + .lbl-toggle + .sec6-content,
+  .toggle:checked + .lbl-toggle + .sec7-content,
+  .toggle:checked + .lbl-toggle + .sec8-content {
     max-height: 100vh;
   }
   
@@ -240,7 +246,9 @@ padding: 0px 300px;
   .sec3-content .content-inner, 
   .sec4-content .content-inner,
   .sec5-content .content-inner,
-  .sec6-content .content-inner {
+  .sec6-content .content-inner,
+  .sec7-content .content-inner,
+  .sec8-content .content-inner {
     background: var(--primary-color);
     border: solid black 1px;
     border-top: none;
