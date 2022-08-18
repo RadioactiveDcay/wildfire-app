@@ -38,26 +38,19 @@ header {
 
 /* Strictly For the Weather API */
 
-
-
-#temperature-description {
-    display: flexbox;
-    box-sizing: 15px;
+#location {
     text-align: right;
-    justify-content: right;
-    margin: auto;
-    background-color: justify;
-    flex: 2 30%;
-    background-color: var(--tertiary-color);
-    border: black
+    size: inherit;
 }
-
+.temperature {
+    text-align: right;
+}
+#temp-description {
+    text-align: right;
+}
 #degrees {
-    flex: 2 30%;
-    background-color: var(--tertiary-color);
-    border: black
+    text-align: right;
 }
-
 
 /* Strictly For the Weather API */
 
