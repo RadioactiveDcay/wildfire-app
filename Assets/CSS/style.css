@@ -38,7 +38,8 @@ h2 {
 .weather-api-box {
     flex: 2 30%;
     background-color: var(--tertiary-color);
-    border: black solid 1px;
+    border: black solid 2px;
+    border-radius: 3px;
 }
 
 /* Sidebar Menu */
@@ -165,6 +166,7 @@ padding: 0px 300px;
     margin-bottom: 1.2rem 0;
     border-bottom: var(--tertiary-color) solid 6px;
   }
+
   
   input[type='checkbox'] {
     display: none;
@@ -178,6 +180,7 @@ padding: 0px 300px;
     text-align: center;
     text-shadow: rgb(60, 60, 60) 1px 1px 1px;
     background: var(--secondary-color);
+    background: radial-gradient(var(--secondary-color), rgb(173, 99, 19));
     cursor: pointer;
     border-radius: 7px;
     border: solid black 1px;
