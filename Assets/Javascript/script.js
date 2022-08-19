@@ -13,6 +13,7 @@ window.addEventListener('load', ()=> {
             const proxy = "https://cors-anywhere.herokuapp.com/";
             const APIkey = `5b2e2bc67a6c73ff4f0998fcebd047ad`;
             const queryURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + String(position.coords.latitude) + "&lon=" + String(position.coords.longitude) + "&limit=10&units=imperial&appid=" + APIkey;
+            // the "CONST" is the original and the fail safe 
             // const queryURL = "https://api.openweathermap.org/data/2.5/weather?q=Sacramento&units=imperial&limit=10&appid=5b2e2bc67a6c73ff4f0998fcebd047ad";
             
             // This fetch command pulls from the queryURL for the weahter API
@@ -24,10 +25,10 @@ window.addEventListener('load', ()=> {
             .then(data => {
                 // Console.log so the graders can see what information is being pulled from openweathermaps.org
                 console.log(data);
-                const {temp, feels_like} = data.main;
+                const {temp, humidity} = data.main;
                 // Set DOM elements pulled from the API
-                temperatureDegree.textContent = "Temp " + temp;
-                temperatureDescription.textContent = "Feels Like " + feels_like;
+                temperatureDegree.textContent = "Temp* " + temp;
+                temperatureDescription.textContent = "Humidity% " + humidity;
                 locationTimezone.textContent = data.name;
             });
         });
